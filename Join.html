@@ -1,0 +1,379 @@
+<html>
+<head>
+		<title>Join Us</title>
+	<link rel="stylesheet" type="text/css" href="hmep.css"/>
+	<style type="text/css">
+		.bg{ background-image:url("https://www.tropicalhealth.com/wp-content/uploads/2017/05/Fotolia_41526107_Subscription_Monthly_M-1-740x400.jpg");
+		background-repeat:no-repeat; height:400px;background-size:cover;background-position:center;padding-top:60px;text-align:center;
+		position:relative; top:70px;}
+	
+		.overplay
+		{
+			background:rgba(255,255,255,0.70);
+			width:100%;
+			height:370px;
+			top:0px;
+			left:0px;
+			z-index:1px;
+		
+		}
+		div#midiv2
+		{
+			font-size:20px;
+			color:black;
+			letter-spacing:3px;
+			background-color:white;
+			margin-top:70px;
+			float:center;
+		}
+
+		</style>
+		
+		
+<script>
+		function Order(Membership, First_Name, Last_Name, DOB,Email,Phone_Number,Street_Address,City,State,Zipcode, Bank_Name, Card_Number, Expiration_Month, Expiration_Year, CVC)
+		{
+		
+ 		   this.Bank_Name = Bank_Name;
+ 		   this.Card_Number = Card_Number;
+ 		   this.Expiration_Month = Expiration_Month;
+ 		   this.Expiration_Year = Expiration_Year;
+ 		   this.CVC = CVC;
+		   this.First_Name = First_Name;
+		   this.Last_Name = Last_Name;
+		   this.DOB = DOB;
+		   this.Email = Email;
+		   this.Phone_Number = Phone_Number;
+		   this.Street_Address = Street_Address;
+		   this.City = City;
+		   this.State = State;
+		   this.Zipcode = Zipcode;
+
+		}
+	
+		function VForm(Membership, First_Name, Last_Name, DOB,Email,Phone_Number,Street_Address,City,State,Zipcode, Bank_Name, Card_Number, Expiration_Month, Expiration_Year, CVC)
+		{
+			var Fname = /^[A-Za-z\s]+$/;
+			if (First_Name.value.match(Fname))
+			{
+				alert('Valid First Name');
+			}
+			else
+				{alert('Please Enter a Valid Name with Alphabetic letters ONLY!');
+					return false;
+			}	
+			
+			
+			var Lname = /^[A-Za-z\s]+$/;
+			if (Last_Name.value.match(Lname))
+			{
+				alert('Valid Last Name');
+			}
+			else
+				{alert('Last name should ONLY Alphabetic letters!');
+					return false;
+			}
+			
+			var age = /^([0-9 \ / \ ]{10})$/;
+			if (DOB.value.match(age))
+			{
+				alert('Valid Date of Birth');
+			}
+			else
+				{alert('Invalid Date of Birth. Please make sure to enter 8 digits DOB plus a "/" as shown in the hint!');
+					return false;
+			}
+			
+			var email = /^[0-9-A-Za-z\@\.]+$/;
+			
+			if (Email.value.match(email))
+			
+			{
+				
+				alert('Valid Email Address');
+				
+			}
+			else 
+				
+				{alert('Please enter your email address');
+			return false;
+			}	
+			
+			
+			
+			var Phone = /^([0-9]{10})$/;
+			if (Phone_Number.value.match(Phone))
+			{
+				
+				alert(' Phone number approved!');
+			}
+			else
+				{alert('Please enter 10 digits phone number ONLY (no space or special characters)!');
+					return false;
+			}
+
+			var sa =  /^[0-9-A-Za-z\@\.\s]+$/;
+			if (Street_Address.value.match(sa))
+			{
+				alert(' Street Address Approved');
+				
+			}
+			else
+			{
+					alert('Please enter your Home street address!');
+					return false;
+			}
+
+			var city = /^[A-Za-z\s]+$/;
+			if (City.value.match(city))
+			{
+				alert('City Approved');
+			}
+			else
+				{alert('City should be with Alphabetic letters ONLY!');
+					return false;
+			}	
+			
+			var zipcode = /^[0-9]+$/;
+			if (Zipcode.value.match(zipcode))
+			{
+			alert('Zipcode Approved');
+			}
+			else
+			{alert('Please enter your zipcode With numbers Only');
+				return false;
+			}	
+			
+			var bname =  /^[A-Za-z\s]+$/;
+			if (Bank_Name.value.match(bname))
+			{
+				alert('Valid card name');
+				
+			}
+			else{
+				aler('Invalid Card Name. Please a valid name with alphabetic letters Only.');
+				return false;
+			}
+			
+			var cardnum = /^([0-9]{16})$/;
+			if(Card_Number.value.match(cardnum))
+			{
+			 alert('Valid Card Number!')
+			}
+			else
+			{
+				alert('Not a valid card number! 16 numerics required');
+				return false;
+			}
+				
+			var exmonth = /^([0-9]{2})$/;
+			if(Expiration_Month.value.match(exmonth))
+			{
+			alert('Valid Expiration Month');
+			}
+			else
+			{
+				alert('Not a valid expiration month! 2 numerics required');
+				return false;
+			}
+		
+					
+			var exyear = /^([0-9]{2})$/
+			if (Expiration_Year.value.match(exyear))
+			{
+				alert('Valid Expiration Year');
+			}
+			else
+			{
+				alert('Not a valid expiration year!The last 2 numbers required');
+				return false;
+			}
+						
+			var cvc = /^([0-9]{3})$/
+			if (CVC.value.match(cvc))
+			{
+				alert('Valid CVC Number');
+			}
+			else
+			{
+				alert("Not a valid CVC Number! 3 numerics required");  
+				 return false;
+			}
+			
+			
+	
+		}
+	
+	</script>
+	
+</head>
+<body>
+	
+	<marquee behavior="scroll" direction="left" style="margin-top:80px; color:red; font-size:45px">Due to the pandamic, new customers get a 25% Off to either Membership</marquee>
+	
+	<div class="bg" > 	
+	<div id="topdiv" style="background-color:rgba(255,0,100,.80)" >
+		<h2 style="margin-left:0px; margin-top:0px; float:left;">24/7 Fitness
+			<img style="float:left; margin-top:0px" height="80" width="120" src="log.png" />
+	</div>
+	<center><mark style="text-color:white; background-color:rgba(0,0,255,.0)">
+
+
+		<a style="color:white; margin-top:20px" href="Homep.html" data-id="1">   Home  </a> &nbsp  &nbsp 
+		<a style="color:white" href="Membership.html" data-id="2"> Membership </a> &nbsp  &nbsp   
+		<a style="color:white" href="PersonalT.html" data-id="3">Personal Trainer</a> &nbsp  &nbsp  
+		<a style="color:white" href="Contact.html" data-id="4">Contact</a>&nbsp  &nbsp 
+		<a style="color:white" >JOIN US</a> &nbsp  &nbsp 
+
+	    <div class="content">
+	    	<h2 style="margin-top:0px"><a style="color:white; margin-top:0px" href="tel:347-221-9814" data-id="2"> &phone; 347-221-9814</a>&nbsp &nbsp 
+		
+	    	<a style="color:white" href="mailto:thiernodem8@gmail.com">&#9993;Thiernodem8@gmail.com</a></h2>
+	
+	</mark></center>
+
+<div class="overplay">
+	<h1 style="	text-align:center;font-size:45px;text-transform:uppercase;font-weight:200; color:blue;padding:1%;">Sign Up Today to get started</h1>
+
+<ol style="float:left; text-align:left; font-size:25px;">
+	<li>Select your Membership choice</li><br/>
+	<li>Enter Your Personel Information</li><br/>
+	<li>Enter Payment Information</li>
+</ol>
+</div>
+
+<form name = "myForm" action = "http://www.WebsiteDevelopmentBook.com/FormEcho.php"
+ method = "post" onsubmit = "return VForm(Membership, First_Name, Last_Name, DOB,Email,Phone_Number,Street_Address,City,State,Zipcode, Bank_Name, Card_Number, Expiration_Month, Expiration_Year, CVC)">	
+ 
+<div id="midiv2">
+	<h2 style="text-transform:lowercase">Choose your Membership choice</h2>
+
+	<!-- table 1!-->
+	
+		<center><table  style="color: white" cellspacing="15";>
+<tr><td style="background-color:rgba(255,0,0,.8); text-transform:uppercase; font-size:20px">Red Card Membership <input type = "radio" name = "Membership" value="Red card" required="required" /> <br/></td>
+
+<td style="background-color:rgba(0,0,255,.8); text-transform:uppercase; font-size:20px">Blue card Membership<input type = "radio" name = "Membership" value="Blue Card" required="required" /> </td></tr>
+<tr style="color:black"><td><a href="Membership.html">Learn more</td>
+</table></center>
+
+<h2 style="text-transform:lowercase">Provide Your personnel information</h2>
+
+	<!-- table 2!-->
+			
+<center><table style="color: black; background-color:rgba(255,200,0,.7)" cellspacing="15"; >
+		<tr><td style="background-color:orange; font-size:18px;">First Name <input type = "text" name = "First_Name" size="30" /></td> 
+			<td style="background-color:orange; font-size:18px;">Last Name <input type = "text" name = "Last_Name" /></td>
+	<td style="background-color:orange; font-size:18px;">Date of Birth <input type = "text" name = "DOB" size="15" placeholder="MM/DD/YYYY"/></td> 
+	 </tr>
+		
+	<tr><td style="background-color:orange; font-size:18px;">E-mail <input type = "text" name = "Email" size="45" /></td> 
+			
+		<td style="background-color:orange; font-size:18px;">Phone Number <input type="text" name = "Phone_Number" placeholder="(###)-###-####" /></td> 		
+		</tr>
+	
+
+	<tr><td style="background-color:orange; font-size:18px;">Street Address <input type = "text" name = "Street_Address" size="50" /></td> 	
+
+	<td style="background-color:orange; font-size:18px;"> City <input type = "text" name = "City" /></td> 	
+		
+	<td style="background-color:orange; font-size:18px;">State <select name = "State">
+		 <option>Ala</option>
+				<option>Alaska</option>
+				<option>Ariz</option>
+				<option>Ark</option>
+				<option> Calif</option> 
+				<option>Colo</option>
+				<option>Conn</option>
+				<option>Del</option>
+				<option>D.C</option>
+				<option> Fla</option>
+				<option>Ga</option>
+				<option>Hawaii</option>
+				<option>Idaho</option>
+				<option>Ill</option>
+				<option> Ind</option> 
+				<option>Iowa</option>
+				<option>Kans</option>
+				<option>Ky</option>
+				<option>La </option>
+				<option> Maine</option>
+				<option>Md</option>
+				<option>Mass</option>
+				<option>Mich</option>
+				<option>Minn</option>
+				<option> Miss</option> 
+				<option>Mo</option>
+				<option>Mont</option>
+				<option>Nebr</option>
+				<option>Nev</option>
+				<option> N.H</option>
+				<option> N.J</option>
+				<option> N.Mex</option>
+				<option>N.Y</option>
+				<option>N.C</option>
+				<option> N.Dak</option> 
+				<option>Ohio</option>
+				<option>Okla</option>
+				<option>Oreg</option>
+				<option>Pa </option>
+				<option> R.I</option>
+				<option>S.C</option>
+				<option>S.Dak</option>
+				<option> Tenn</option> 
+				<option>Tex</option>
+				<option>Utah</option>
+				<option>Vt</option>
+				<option>Va </option>
+				<option> Wash</option>
+				<option>W.Va</option>
+				<option>Wisc </option>
+				<option> Wyo</option>
+			 	</select>
+		</td>
+<td style="background-color:orange; font-size:18px;"> Zipcode <input type = "text" name = "Zipcode" /></td> </tr>
+</table></center></br>
+
+<!-- table 3!-->
+
+ <h2 style="text-transform:lowercase; float:center">Provide the Payement Information</h2>	
+
+
+<table  style="margin-top:40px; background-color:rgba(0,255,0,.90); color: black" cellspacing="10"; >
+
+
+<tr>
+	 <td style="font-size:20px;">Bank Name<input type = "text" name = "Bank_Name" size="20" /></td>
+		
+	<td style="font-size:20px;">Card Number <input type = "text" name = "Card_Number" size="40"  placeholder="16  digits required"/></td>
+
+	<td style="font-size:20px;">Expiration Month <input type = "text" name = "Expiration_Month" size="10" placeholder="2 digits" /></td>
+
+	<td style="font-size:20px;">Expiration Year <input type = "text" name = "Expiration_Year" size="15" placeholder="last 2 digit"/></td>
+
+	<td style="font-size:20px;">CVC <input type = "text" name = "CVC" size="5" placeholder="3 digits"/></td></tr>
+
+	<tr><td> <input type = "submit" value = "Submit" size="40" /></td></tr>
+	</table></center>
+
+	
+</form>	
+</div>
+
+<div id="bottomdiv" style="background-color:rgba(200,100,200,.8); margin-top:100px">
+	
+	<img style="float:left; margin-top:0px" height="200" width="330" src="log.png" /> 
+	
+	<p style="margin-bottom:0px; float:center; color:black; font-size:20px;"> Contacts <br/> <a  style="color:black; margin-bottom:0px; float:center" href="tel:347-221-9814" data-id="2"> &phone; 347-221-9814</a><br><br/>
+		
+<a style="color:black; float:center; font-size:20px" href="mailto:thiernodem8@gmail.com">&#9993;Thiernodem8@gmail.com</a>
+
+	<h2 style="float:right; color:black; font-size:20px;">Our Location <br/>
+	<a style="float:right; margin-bottom:0px; color:black" href="https://www.google.com/maps/search/riverbank+state+park/@40.8250764,-73.9590906,17z/data=!3m1!4b1" data-id="3"> 679 Riverside Dr, New York, NY 10031</a>
+</h2>
+</div>	
+
+
+
+</body>
+</html>

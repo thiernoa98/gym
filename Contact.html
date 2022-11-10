@@ -1,0 +1,197 @@
+<html>
+<body>
+
+		<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="hmep.css"/>
+	<style type="text/css">
+		.bg{ background-image:url("https://images.squarespace-cdn.com/content/v1/58d70b38579fb30814695e76/1547496873841-8A0KCF6S11RNJXYEMYLG/ke17ZwdGBToddI8pDm48kA8oBnZDZIoqKfYtSWYURtIUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKc7dIiG406yLTS8CEEaG-FSfpQxRJ6Fu6OVCsPeH03pIbcYlNzkT5ebT8Krjy8Qqj_/contact+us.jpg?format=1500w");
+		background-repeat:no-repeat; height:400px;background-size:cover;background-position:center;padding-top:60px;text-align:center;
+		position:relative; top:70px;}
+	
+		.overplay
+		{
+			background:rgba(0,0,0,0.4);
+			width:100%;
+			height:370px;
+			top:0px;
+			left:0px;
+			z-index:1px;
+		
+		}
+		div#midiv2
+		{
+			font-size:20px;
+			color:black;
+			letter-spacing:3px;
+			background-color:white;
+			margin-top:70px;
+			float:center;
+		}
+
+		</style>
+		
+		
+	<script>
+		function Order(First_Name, Last_Name,Email,Phone_Number, Question_About,
+	 Question_about, question_about, question_about)
+		{
+		   this.First_Name = First_Name;
+		   this.Last_Name = Last_Name;
+		   this.Email = Email;
+		   this.Phone_Number = Phone_Number;
+		   this.Question_About = Question_About;
+		   this.Question_about = Question_about;
+		   this.question_about = question_about;
+		   this.question_about = question_about;
+	   }
+	function QForm(First_Name, Last_Name,Email,Phone_Number,Question_About,
+	 Question_about, question_abou,question_about)
+	   
+	   {
+	   			var Fname = /^[A-Za-z\s]+$/;
+	   			if (First_Name.value.match(Fname))
+	   			{
+	   				alert('Valid First Name');
+	   			}
+	   			else
+	   				{alert('Please Enter a Valid Name with Alphabetic letters ONLY!');
+	   					return false;
+	   			}	
+			
+			
+	   			var Lname = /^[A-Za-z\s]+$/;
+	   			if (Last_Name.value.match(Lname))
+	   			{
+	   				alert('Valid Last Name');
+	   			}
+	   			else
+	   				{alert('Last name should ONLY Alphabetic letters!');
+	   					return false;
+	   			}
+				
+				var email = /^[0-9-A-Za-z\@\.]+$/;
+			
+				if (Email.value.match(email))
+			
+				{
+				
+				alert('Valid Email Address');
+				
+				}
+				else 
+				
+				{alert('Please enter your email address');
+				return false;
+				}	
+			
+				var Phone = /^([0-9]{10})$/;
+				if (Phone_Number.value.match(Phone))
+				{
+				
+				alert(' Phone number approved!');
+				}
+				else
+				{alert('Please enter 10 digits phone number ONLY(no space or specialcharacters)!');
+									return false;
+				}
+				
+		}
+		</script>
+</head>	
+<body>
+	
+	<div class="bg" > 	
+	<div id="topdiv" style="background-color:rgba(255,255,255,.8)" >
+		<h2 style="margin-left:0px; margin-top:0px; float:left; color:black">24/7 Fitness
+			<img style="float:left; margin-top:0px" height="80" width="120" src="log.png" />
+	</div>
+	<center><mark style="text-color:black; background-color:rgba(0,0,255,.0)">
+
+
+		<a style="color:black; margin-top:20px" href="Homep.html" data-id="1">   Home  </a> &nbsp  &nbsp 
+		<a style="color:black" href="Membership.html"> Membership </a> &nbsp  &nbsp   
+		<a style="color:black" href="PersonalT.html" data-id="3">Personal Trainer</a> &nbsp  &nbsp  
+		<a style="color:black" >Contact</a>&nbsp  &nbsp 
+		<a style="color:black" href="Join.html" data-id="5">JOIN US</a> &nbsp  &nbsp 
+
+	    <div class="content">
+	    	<h2 style="margin-top:0px"><a style="color:black; margin-top:0px" href="tel:347-221-9814" data-id="2"> &phone; 347-221-9814</a>&nbsp &nbsp 
+		
+	    	<a style="color:black" href="mailto:thiernodem8@gmail.com">&#9993;Thiernodem8@gmail.com</a></h2>
+	
+	</mark></center>
+	<div class="overplay">
+			<h1 style="	text-align:center;font-size:45px;text-transform:uppercase;font-weight:200; color:white;padding:1%;">INqueries?</h1>
+	<p style="text-align:center;font-size:45px;text-transform:lowercase;font-weight:20; color:white;padding:1%;">24/7 Fitness is available to answer any of your inquiries at anytime</p>
+</div>
+
+<div id="middiv" style="margin-top:0px; text-transform:none">
+	<p style="color:black; text-transform:none; text-align:center; font-size:30px">
+		Contact Us</p>
+		
+	<form name = "myForm" action = "http://www.WebsiteDevelopmentBook.com/FormEcho.php"
+	 method = "post" 
+	 onsubmit = "return QForm(First_Name, Last_Name, Email,Phone_Number, Question_About,
+	 Question_about, question_about, question_about)"/>
+	
+	<center> <table cellpadding="10" style="margin-top:30px">
+
+		
+			<tr><th style="background-color:white">Please Fill out the following form to complete your questionnaire form</th></tr>
+			<tr><td style="font-size:18px;">First Name <input type = "text" name = "First_Name" size="30" /></td> 
+				<td style=" font-size:18px;">Last Name <input type = "text" name = "Last_Name"  /></td></tr>
+
+
+
+
+	
+	<tr><td style="font-size:18px;">E-mail <input type = "text" name = "Email" size="45" /></td> 
+			
+		<td style="font-size:18px;">Phone Number <input type="text" name = "Phone_Number" /></td> 		
+		</tr>
+		<tr><td style="font-size:30px">Select Every Applied Inquiries</td></tr>
+	<tr><td><ul style="list-style-type:circle"><ul></td></tr>
+	<tr><td><li>Red Card Membership<input type="checkbox" name="Question_about" 
+		value="Red Card Membership"/></li></td></tr>
+	<tr><td><li>Blue Card Membership <input type="checkbox" name="question_about" 
+		value="Blue Card Membership"/></li></td></tr>
+	<tr><td><li>Personal Trainers <input type="checkbox" name="Question_About" 
+		value="Personal Trainers"></li>
+	</td></tr>
+	<tr><td><li>Something Else <input type="checkbox" name="Question_About" 
+		value="Something Else"></li>
+	</td></tr>
+	<tr>
+		     	<td colspan="2">
+		           <label for="comments" style="font-size:18px;"> Provide Further Description below</label>  
+		         </td>
+		     </tr>		 	
+			 <tr>
+		     	<td colspan="2">
+		             <textarea name="comments" cols="110" rows="10" id="comments" required="required"></textarea>     
+		         </td>
+		     </tr>
+		 
+		
+	</table>
+<button style="background-color:red; font-size:200"> <input type = "submit" value = "SUBMIT" size="40" >
+</h1>	</center></form>
+</div>
+
+<div id="bottomdiv" style="background-color:rgba(0,0,0,.8); margin-top:100px">
+	
+	<img style="float:left; margin-top:0px" height="200" width="330" src="log.png" /> 
+	
+<p style="margin-bottom:0px; float:center; color:white; font-size:20px;"> Contacts <br/> <a  style="color:white; margin-bottom:0px; float:center" href="tel:347-221-9814" data-id="2"> &phone; 347-221-9814</a><br><br/>
+		
+<a style="color:white; float:center; font-size:20px" href="mailto:thiernodem8@gmail.com">&#9993;Thiernodem8@gmail.com</a>
+
+	<h2 style="float:right; color:white; font-size:20px;">Our Location <br/>
+	<a style="float:right; margin-bottom:0px; color:white" href="https://www.google.com/maps/search/riverbank+state+park/@40.8250764,-73.9590906,17z/data=!3m1!4b1" data-id="3"> 679 Riverside Dr, New York, NY 10031</a>
+</h2>
+</div>		
+	
+	
+	
+</body>
+</html>
